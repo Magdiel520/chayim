@@ -9,7 +9,11 @@ import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ClipboardModule } from 'ngx-clipboard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ClipboardComponent } from './components/shared/clipboard/clipboard.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { WhatsappComponent } from './components/shared/whatsapp/whatsapp.component';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -18,14 +22,17 @@ import { ClipboardComponent } from './components/shared/clipboard/clipboard.comp
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ClipboardComponent,
+    ResumeComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     ClipboardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
