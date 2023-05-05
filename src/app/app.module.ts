@@ -13,6 +13,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { WhatsappComponent } from './components/shared/whatsapp/whatsapp.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 
@@ -32,7 +33,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ClipboardModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

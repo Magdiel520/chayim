@@ -1,122 +1,87 @@
-/* @import url('https://googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
 * {
+  font-family: Inter, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
-
-body {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-  background: #fff;
-}
-
-footer {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 50px 100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-footer .container .sec {
-  margin-right: 30px;
-}
-
-footer .container .sec .sobre {
-  width: 40%;
-}
-
-footer .container .sec .sobre h2 {
-  position: relative;
-  color: #000;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-footer .container h2:before {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: #000;
-}
-
-footer p {
-  color: #999;
-}
-
-.sci {
-  margin-top: 20px;
-  display: flex;
-}
-
-.sci li {
-  list-style: none;
-}
-
-.sci li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-} */
 
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  color: #000
+}
+
+#footer_content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
   display: flex;
+  gap: 3.5rem;
+  margin-top: 3rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+#footer_social_media a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
 }
 
-ul {
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #000;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 2rem;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-li {
-  margin-bottom: 10px;
+.footer-list a {
+  text-decoration: none;
+  color: #000;
 }
 
-.col {
-  float: left;
-  width: 33.33%;
-  padding: 0 15px;
-  box-sizing: border-box;
+#footer-list .footer-link {
+  color: #000;
+  transition: all 0.4s;
 }
 
-.logo {
-  margin-bottom: 15px;
+#footer-list .footer-linl:hover {
+  color: darkslateblue;
 }
 
-@media (max-width: 768px) {
-  .col {
-    width: 100%;
-    padding: 0;
-  }
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+}
+
+#footer_subscribe a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+}
+
+#footer_subscribe p {
+  padding-top: 1rem;
 }
