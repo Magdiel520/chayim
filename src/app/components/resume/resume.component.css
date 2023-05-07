@@ -10,10 +10,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 1000px;
+  min-height: 1300px;
 }
 
 .container {
+  margin: 50px;
   position: relative;
   width: 100%;
   max-width: 1000px;
@@ -93,21 +94,26 @@ body {
   font-weight: 300;
 }
 
-.title ul {
-  color: #fff;
-}
 
-.title {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-
-}
 
 .container .right_side {
   position: relative;
   background: #fff;
   padding: 40px;
+}
+
+.botao_voltar {
+  border-radius: 7px;
+  bottom: 20px;
+  width: 100px;
+  height: 40px;
+  background: #523bd2;
+  color: white;
+  font-size: 22px;
+  border: solid 1px #003147;
+}
+
+.botao_voltar:hover {
+  transition: all 0.7s;
+  background: #523bd6;
 }
